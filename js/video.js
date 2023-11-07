@@ -10,7 +10,7 @@ window.addEventListener("load", function() {
 		console.log("Play Video");
 		document.getElementById("player1").play();
 		document.getElementById("player1").volume = document.getElementById("slider").value / 100;
-		document.getElementById("volume").innerHTML = document.getElementById("slider").value;
+		document.getElementById("volume").innerHTML = document.getElementById("slider").value + '%';
 	});
 
 	document.querySelector("#pause").addEventListener("click", function() {
@@ -46,7 +46,7 @@ window.addEventListener("load", function() {
 
 	this.document.querySelector("#slider").addEventListener("change", function () {
 		video.volume = document.getElementById("slider").value / 100;
-		document.getElementById("volume").innerHTML = document.getElementById("slider").value;
+		document.getElementById("volume").innerHTML = document.getElementById("slider").value + '%';
 	});
 
 	this.document.querySelector("#vintage").addEventListener("click", function() {
